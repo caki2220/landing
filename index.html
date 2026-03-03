@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Nevora Enterprise</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+
+body{
+font-family:Inter,sans-serif;
+background:#fff;
+color:#111;
+}
+
+/* NAV */
+.nav{
+transition:.4s;
+}
+
+.nav.scrolled{
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(20px);
+border-bottom:1px solid #eee;
+}
+
+/* BUTTON */
+.btn{
+background:#111;
+color:white;
+padding:15px 34px;
+border-radius:999px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* CARD */
+.card{
+border:1px solid #e5e7eb;
+border-radius:26px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* FAQ */
+.faq-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .45s ease, opacity .35s ease;
+opacity:0;
+}
+
+.faq-card.active .faq-content{
+max-height:500px;
+opacity:1;
+}
+
+.faq-card.active .faq-icon{
+transform:rotate(45deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<header id="nav" class="nav fixed w-full z-50">
+<div class="max-w-6xl mx-auto flex justify-between px-6 py-5">
+
+<h1 class="font-semibold">Nevora</h1>
+
+<div class="flex gap-8">
+
+<a href="index.html">Inicio</a>
+
+<a href="#pricing">Planos</a>
+
+<a href="porque.html">Por que Nevora?</a>
+
+<a href="comunidade.html">Comunidade</a>
+
+<a href="suporte.html"
+class="text-gray-600 hover:text-black transition">
+Suporte
+</a>
+
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+
+<h1 data-aos="fade-up"
+class="text-7xl font-semibold max-w-4xl">
+Infraestrutura feita
+para crescer.
+</h1>
+
+<p data-aos="fade-up" data-aos-delay="200"
+class="text-gray-500 mt-6 max-w-xl">
+Hospedagem enterprise com estabilidade extrema.
+</p>
+
+<a data-aos="fade-up" data-aos-delay="400"
+href="#pricing"
+class="btn mt-10">
+Começar
+</a>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="py-32 bg-gray-50 text-center">
+
+<h2 class="text-4xl font-semibold mb-16">
+Experiência Nevora
+</h2>
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+<div class="card p-10">
+<h3 class="text-xl font-semibold mb-3">
+Baixa Latência
+</h3>
+<p class="text-gray-600">
+Infraestrutura otimizada para resposta imediata
+e estabilidade contínua.
+</p>
+</div>
+
+<div class="card p-10">
+<h3 class="text-xl font-semibold mb-3">
+Isolamento Total
+</h3>
+<p class="text-gray-600">
+Recursos dedicados garantindo performance
+constante mesmo sob carga elevada.
+</p>
+</div>
+
+<div class="card p-10">
+<h3 class="text-xl font-semibold mb-3">
+Escalabilidade
+</h3>
+<p class="text-gray-600">
+Arquitetura preparada para crescimento
+sem migrações complexas.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-32 text-center">
+
+<h2 class="text-5xl font-semibold mb-20">
+Escolha seu nível
+</h2>
+
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+
+<div class="card p-10">
+<h3 class="text-2xl mb-4">Varejo</h3>
+<p class="text-gray-500 mb-6">
+Projetos pequenos e testes iniciais.
+</p>
+<p class="text-3xl font-semibold">
+R$29,90
+</p>
+</div>
+
+<div class="card p-10 border-black">
+<h3 class="text-2xl mb-4">
+Nevora Enterprise
+</h3>
+
+<p class="text-gray-500 mb-6">
+Performance máxima dedicada.
+</p>
+
+<p class="text-5xl font-semibold mb-6">
+R$299,99
+</p>
+
+<a href="https://SEU-UPMIND-CHECKOUT"
+target="_blank"
+class="btn">
+Checkout Upmind
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+<section class="py-32 bg-gray-50">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-5xl text-center font-semibold mb-16">
+Perguntas Frequentes
+</h2>
+
+<div class="space-y-4">
+
+<div class="faq-card border rounded-full overflow-hidden">
+
+<button class="faq-btn w-full flex justify-between items-center p-7 text-left">
+
+<span class="font-semibold text-lg">
+Existe fidelidade contratual?
+</span>
+
+<span class="faq-icon text-2xl transition-transform">+</span>
+
+</button>
+
+<div class="faq-content px-7">
+<p class="text-gray-600 pb-7 leading-relaxed">
+Sim. O plano Nevora Enterprise possui fidelidade mínima
+para garantir alocação dedicada de recursos e estabilidade
+operacional contínua.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="py-10 text-center text-gray-400">
+© 2026 Nevora Host
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+duration:700,
+once:true
+});
+
+const nav=document.getElementById("nav");
+
+window.addEventListener("scroll",()=>{
+if(window.scrollY>50){
+nav.classList.add("scrolled");
+}else{
+nav.classList.remove("scrolled");
+}
+});
+
+/* FAQ */
+document.querySelectorAll(".faq-btn").forEach(btn=>{
+btn.addEventListener("click",()=>{
+const card=btn.parentElement;
+
+document.querySelectorAll(".faq-card").forEach(c=>{
+if(c!==card)c.classList.remove("active");
+});
+
+card.classList.toggle("active");
+});
+});
+
+</script>
+
+</body>
+</html>
